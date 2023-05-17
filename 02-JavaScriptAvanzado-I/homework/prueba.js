@@ -1,0 +1,11 @@
+let x = 10;
+
+(function foo() {
+  console.log(x);
+  let x = 20;
+  if (x === 20) {
+    let x = 30;
+    console.log(x);
+  }
+  console.log(x);
+})();
